@@ -1,0 +1,719 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Oswald;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.contanier{
+    width: 80vw;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+main{
+    background: #f67c92;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 60px;
+}
+.toggle img{
+    min-width: 30px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.toggle img{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+.toggle{
+width: 0px;
+    height: 100vh;
+    position: fixed;
+    
+    top: 0;
+    right: 0;
+    text-align: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    justify-content: center;
+    transition: all 0.3s ease;
+
+}
+.toggle-width{
+    transition: all 0.3s ease;
+    width: 250px;
+    color: #000;
+
+    height: 100vh;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(225,255,255,0.3));
+    backdrop-filter: blur(0.5rem);
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: center;
+    align-items: center;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.toggle ul li{
+    list-style: none;
+    padding: 20px 0;
+
+}
+.toggle ul li a{
+    text-decoration: none;
+    color: black;
+    
+}
+.logo{
+    padding: 20px 20px;
+}
+.left{
+    padding: 20px 30px;
+    align-items: center;
+    margin-top: 50px;
+}
+.left p{
+    padding-bottom:  10px;
+}
+.left button{
+    outline: none;
+     padding: 10px 10px;
+     border: 2px solid #f67c92;
+     background: #fff;
+     transition: all 0.3s linear;
+    
+}
+.left button:hover{
+    outline: none;
+     padding: 10px 10px;
+     border: 2px solid #fff;
+     color: #fff;
+     background: #f67c92;
+    
+}
+.one{
+    width: 10px;
+    display: inline-block;
+    margin: 15px 0;
+    height: 3px;
+    width: 20px;
+    background-color: #f67c92;
+}
+.toggle ul li a{
+    transition: all 0.3s linear;
+}
+.toggle ul li a:hover{
+    color: #000;
+    z-index: -1;
+    font-size: 1.5rem;
+}
+
+
+.main-box{
+    width: 70vw;
+    height: 75vh;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(225,255,255,0.1)),url(../images/background.png);
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    z-index: 1;
+    backdrop-filter: blur(0.6rem);
+    
+
+}
+
+.circle1,.circle2{
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(225,255,255,0.3));
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    border-radius: 50%;
+    
+}
+.circle1{
+    top: 5%;
+    right: 10%;
+
+}
+.circle2{
+    bottom: 5%;
+    left: 10%;
+}
+.div-left{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    top: 35%;
+    left: 5%;
+}
+.div-left img{
+    margin: 10px 0;
+    width: 20px ;
+    height: 20px;
+
+}
+/* about us sty;le start w=form here */
+.about-box{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+
+    align-items: center;
+}
+.left-about{
+    width: 50%;
+    position: relative;
+
+
+
+}
+.left-about img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.right-about{
+    width: 50%;
+    position: relative;
+    text-align: right;
+}
+.skills h2{
+    margin-top: 20px;
+    margin-bottom: 70px;
+    font-size: 2rem;
+
+    
+    text-align: center;
+}
+
+/* .progress::after{
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: black;
+    right: 0;
+    z-index: -1;
+    clip-path: polygon(47% 0, 48% 36%, 63% 54%,49% 76%,49% 100%, 0 100%,0 0);
+} */
+.left-progress img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.left-progress{
+    width: 50%;
+    position: relative;
+}
+.right-progress{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.progress{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.one1{
+    margin: 9px 0;
+    width: 300px;
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, red 80%,gray 20%);
+    animation: bb 2s infinite linear;
+    transition: all linear;
+}
+ @keyframes bb{
+     0%{
+        background: linear-gradient(to right, red 75%,gray 25%);
+     }
+     100%{
+        background: linear-gradient(to right, red 80%,gray 20%);
+     }
+ }
+
+.one2{
+    margin: 9px 0;
+    width: 300px;
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, orange 70%,gray 30%);
+}
+.one3{
+    margin: 9px 0;
+    width: 300px;
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, skyblue 60%,gray 40%);
+}
+.one4{
+    margin: 9px 0;
+    width: 300px;
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, yellow 50%,gray 50%);
+}
+.one5{
+    margin: 9px 0;
+    width: 300px;
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, purple 50%,gray 50%);
+}
+
+
+
+
+
+/* text effect in web */
+
+.text-effect{
+    width: 100%;
+    height: 50vh;
+    background: #161616;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.effect-right {
+    height: 30px;
+    width: 60px;
+    position: relative;
+}
+
+.effect-right h1 {
+    color: white;
+    text-shadow: 0 0 10px #00b3ff,
+    0 0 20px #00b3ff,
+    0 0 40px #00b3ff,
+    0 0 80px #00b3ff,
+    0 0 120px #00b3ff;
+    
+}
+
+.effect-left{
+
+    height: 30px;
+    width: 350px;
+    overflow: hidden;
+
+
+}
+
+.effect-left h1{
+    animation: tedtalk 10s alternate infinite;
+    position: relative;
+    color: white;
+    text-shadow: 0 0 6px #00b3ff;
+    
+}
+
+@keyframes tedtalk {
+    0% {
+        top: 0px;
+
+    }
+
+    10% {
+        top: -35px;
+    }
+
+    20% {
+        top: -70px;
+    }
+
+    30%{
+        top: -100px;
+    }
+
+    40% {
+        top: -115px;
+
+    }
+    50%{
+        top: -115px;
+    }
+    60%{
+        top: -100px;
+    }
+    70%{
+        top: -70px;
+    }
+    80%{
+        top: -35px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+.know{
+    text-align: center;
+    margin: 90px 0;
+}
+
+.know h1{
+    margin-bottom: 40px;
+}
+.login{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.login-flex{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.login-right{
+    position: relative;
+    width: 50%;
+}
+.login-right img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+form .form-group input{
+  padding: 10px 10px;
+  width: 250px;
+  border: 1px solid #f67c92;
+  outline: none;
+}
+form .form-group{
+    padding:5px 0;
+    
+}
+.login-left{
+    width: 50%;
+    position: relative;
+
+}
+.login-left form{
+    display: inline-block;
+}
+.login p{
+    margin-top: 10px;
+    margin-bottom: 90px;
+}
+form .btn-submit{
+    padding: 5px 10px;
+    border: 1px solid #f67c92;
+    outline: #f67c92;
+    background: #fff;
+    cursor: pointer;
+}
+
+.last-one{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    background:#f67c92;
+    height: 20vh;
+
+    
+}
+
+.left-footer{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+
+}
+.right-footer{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+.left-footer h4{
+   margin-bottom: 10px;
+}
+.left-footer h5{
+    margin-bottom: 30px;
+}
+.right-footer button{
+    margin: 10px 0;
+    outline: none;
+     padding: 7px 10px;
+     border: 1px solid transparent;
+     background: #fff;
+}
+.last{
+    background: #161616;
+    color: #ffffff;
+    text-align: center;
+
+}
+.last h4{
+    padding: 5px;
+}
+.top-nav{
+    color: #161616;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.top-logo{
+    position: absolute;
+    top: 3%;
+    left: 3%;
+}
+.fa-snowflake{
+    transition: all linear;
+    animation: rot 2s linear infinite;
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.know{
+    background: linear-gradient(rgba(29,38,113,0.8), rgba(195,55,100,0.8)),url(../images/pexels-sebastiaan-stam-1482476.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 50vh;
+    width: 100%;
+}
+.know button{
+    outline: none;
+     padding: 10px 10px;
+     border: 2px solid #f67c92;
+     background: #fff;
+    margin-top: 10px;
+
+}
+.know .contanier .padd{
+    padding: 30px 0;
+}
+.services{
+    margin: 100px 0;
+    text-align: center;
+}
+.three-services{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+.services1{
+    padding: 30px;
+    border: 1px solid transparent;
+    box-shadow: 0 30px 60px rgba(0,0,0,.2);
+}
+
+.services1 h3{
+    padding: 10px 0;
+}
+.fa-flask, .fa-toolbox, .fa-search-dollar{
+    color: blue;
+    font-size: 3rem;
+
+}
+
+
+.cards4{
+    display: grid;
+    grid-template-columns: 230px 230px;
+    grid-template-rows: 200px 200px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    place-content: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+.cardone{
+    border: 1px solid transparent;
+    box-shadow: 0 30px 60px rgba(0,0,0,.2);
+}
+.fa-map-marked-alt, .fa-envelope-open-text, .fa-at, .fa-aws{
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+/* ///skill card */
+.skillscard{
+    margin: 50px 0;
+    
+    
+}
+.flex-only{
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    
+}
+.skillcards{
+  position: relative;
+  width: 250px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 30px 60px rgba(0,0,0,.2);
+}
+.percent, .percent2,.percent3{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.percent svg, .percent2 svg,.percent3 svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+
+}
+.percent svg circle,.percent2 svg circle,.percent3 svg circle{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    
+}
+.percent svg circle:nth-child(1),.percent2 svg circle:nth-child(1),.percent3 svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+.percent svg circle:nth-child(2){
+    stroke-dashoffset: 50;
+    stroke: #161616;
+}
+.percent2 svg circle:nth-child(2){
+    stroke-dashoffset: 70;
+    stroke: #161616;
+}
+.percent3 svg circle:nth-child(2){
+    stroke-dashoffset: 90;
+    stroke: #161616;
+}
+.percent .number,.percent2 .number,.percent3 .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+
+/* eroor page
+ */
+ 
+       
+   
+   
+ .error{
+    
+
+    position: relative;
+     background: url(../images/2480259.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.problem{
+    position: absolute;
+    top: 5%;
+    left: 27%;
+}
+.er{
+    position: absolute;
+    left: 48%;
+    bottom: 7%;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #000;
+    transition: all 0.3s ease;
+}
+.er:hover{
+    transform: translateY(-5px);
+}
+   
+@media(max-width: 480px){
+    
+    .three-services{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .services1{
+
+        margin: 20px 0;
+    }
+    .login-flex, .web2, .progress, .about-box, .last-one, .flex-only,.right-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .login-left, .login-right, .div4, .right-progress, .left-progress,.right-about, .left-about{
+        width: 100%;
+        position: relative;
+    }
+    .last-one{
+        height: 30vh;
+    }
+    .skillcards{
+        margin: 10px 0;
+    }
+    .cards4{
+    
+    display: flex;
+    flex-direction: column;
+    }
+}
