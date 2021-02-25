@@ -26,7 +26,7 @@ app.post("/databas", async(req, res)=>{
         await dreamdata.save();
         res.status(201).render('databas');
     } catch (e){
-        res.status(500).send(e);
+        res.status(500).send("hello there is come error");
     }
    
 })
